@@ -37,7 +37,6 @@ app.get('/', (request, response) => {
 });
 
 app.get('/api/:name', (request, response) => {
-  //what is params? what is name?
   const teaName = request.params.name.toLowerCase();
   if (tea[teaName]) {
     response.json(tea[teaName]);
